@@ -1,0 +1,27 @@
+// Evaluating CV Spectre 
+simulator lang=spectre
+
+parameters Vg=3.3
+include "./models/N350A/spectre/tt.lib"
+
+// device0
+M0 (drain0 gate0 source0 body0) nmos1 w=350n l=350n
+vVDD0 (drain0 0) vsource dc=0.3 type=dc
+vVSS0 (source0 0) vsource dc=0 type=dc
+vVGG0 (gate0 0) vsource dc=Vg mag=1 type=dc 
+vVBB0 (body0 0) vsource dc=0 type=dc
+
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=-40 \
+tnom=-40 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+digits=5 cols=80 pivrel=1e-3 sensfile="tmp/sens.output" \
+checklimitdest=psf
+ac ac freq=1000000.0 param=Vg start=0 stop=3.3 step=0.3 annotate=status 
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts  where=rawfile
+save vVGG0:p gate0 
+saveOptions options pwr=subckts save=allpub
+
