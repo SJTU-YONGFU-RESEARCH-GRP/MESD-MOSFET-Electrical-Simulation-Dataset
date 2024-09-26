@@ -2,7 +2,7 @@
 
 This paper introduces the Metal-Oxide-Semiconductor Field Effect Transistor (MOSFET) Electrical Simulation Dataset, MESD, an extensive collection of I-V and C-V characteristics data simulated across different foundries' Berkeley Short-channel IGFET Models (BSIMs). The MESD dataset covers a range of bias voltages, temperatures, and MOSFET physical dimensions across several technology nodes from 3 to 350 nm. MESD is designed to serve as a standardized benchmark for evaluating and comparing MOSFET models, aiding semiconductor researchers and model developers in assessing the accuracy of their simulations against a robust set of controlled data.
 
-To get more details of the dataset, please refer to the paper: Y. Zhang, K. lu Low, L. Li, L. Shao, Y. Sun, J. Zhao, and Y. Li, Descriptor: MOSFET Electrical Simulation Dataset (MESD), IEEE Data Descriptions.
+To get more details of the dataset, please refer to the paper: Y. Zhang, K.-L. Low, L. Li, L. Shao, Y. Sun, J. Zhao, Y. Sun, Y. Shi, and Y. Li, Descriptor: MOSFET Electrical Simulation Dataset (MESD), IEEE Data Descriptions.
 
 ## Data File Naming Convention
 
