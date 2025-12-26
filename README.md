@@ -43,6 +43,9 @@ Each file includes metadata such as PDK name, device name, simulator, and model.
 | Vgs        | Gate-source voltage in volts               | List of float    |
 | Ids        | Drain current measured in amperes          | List of float    |
 | Cgg        | Gate capacitance in farads                 | List of float    |
+| Cgs        | Gate Source capacitance in farads                 | List of float    |
+| Cgd        | Gate Drain capacitance in farads                 | List of float    |
+| Cgb        | Gate Body capacitance in farads                 | List of float    |  (Some Cgb=0 values occur because these PDK models lack a Body port.)
 
 
 ## Data Simulation Script
