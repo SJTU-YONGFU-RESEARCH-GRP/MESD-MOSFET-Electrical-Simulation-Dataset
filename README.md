@@ -12,6 +12,7 @@ The dataset is in `MESD` folder. The data is recorded with JSON files. Each JSON
 |------------|----------|-------------------------|--------------------------|
 | 3 nm       | N3A      | 1                       | 1                        |
 | 7 nm       | N7A      | 3                       | 3                        |
+| 7 nm       | N7B      | 1                       | 1                        |
 | 15 nm      | N15A     | 1                       | 1                        |
 | 40 nm      | N40A     | 3                       | 3                        |
 | 45 nm      | N45A     | 1                       | 1                        |
@@ -55,3 +56,12 @@ The `scripts` folder provides examples for the simulation of MOSFET devices. `ne
 ## License
 
 This repository is licensed under the terms of the Creative Commons Attribution 4.0 International License.
+
+## LDE Data
+
+The layout-dependent effect (LDE) data are in `MESD2.0/LDE`.
+
+| Effect | Description | Parameters |
+|--------|-------------|------------|
+| LOD (Length of Diffusion) | STI stress varies with the distance from the gate to the diffusion edges | `SA`, `SB` |
+| OSE (Oxide Spacing Effect) | STI stress varies with the spacing between adjacent diffusion regions | `SODXA`, `SODXB` |
